@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: secure-device-test-server-pro
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DEVICE_TEST_TOKEN
+        generateValue: true
+      - key: SERVICE_NAME
+        value: secure-device-test-server
+      - key: MAX_EVENTS_PER_MINUTE
+        value: "60"
+      - key: MAX_CONNECTIONS_PER_IP
+        value: "10"
+      - key: ALLOWED_ORIGINS
+        value: "http://localhost:3000,http://127.0.0.1:3000"
