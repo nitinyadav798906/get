@@ -9,8 +9,16 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: "20"
       - key: DEVICE_TEST_TOKEN
         generateValue: true
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_CHAT_IDS
+        sync: false
+      - key: KEEP_ALIVE
+        value: "true"
       - key: SERVICE_NAME
         value: secure-device-test-server
       - key: MAX_EVENTS_PER_MINUTE
