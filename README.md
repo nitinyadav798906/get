@@ -1,3 +1,7 @@
+## Deploy To Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nitinyadav798906/get)
+
 # Secure Device Test Server Pro
 
 A hardened Express and Socket.IO service for authorized connectivity testing. It deliberately excludes surveillance and private-data collection features.
