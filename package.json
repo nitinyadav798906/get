@@ -1,23 +1,20 @@
 {
   "name": "secure-device-test-server-pro",
-  "version": "2.0.0",
-  "private": true,
-  "description": "Production-minded authenticated device connectivity test service",
+  "version": "2.1.0",
+  "description": "Express + Socket.IO connectivity test server with Telegram bot",
   "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js",
-    "test": "node --test",
-    "check": "node --check server.js && node --check server.test.js"
+    "test": "node --test"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "helmet": "^8.1.0",
-    "socket.io": "^4.8.1"
-  },
-  "devDependencies": {
-    "socket.io-client": "^4.8.1"
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "socket.io": "^4.8.1",
+    "telegraf": "^4.16.3"
   }
 }
